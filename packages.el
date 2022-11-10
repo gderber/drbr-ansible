@@ -45,42 +45,42 @@
 ;;
 ;;; Code:
 
-(defconst drbr-ansible-packages
-  '(
+;; (defconst drbr-ansible-packages
+;;   '(
 
-    ;; Ansible
-    (ansible-vault :location elpa)
+;;     ;; Ansible
+;;     (ansible-vault :location elpa)
 
-    )
-    "The list of Lisp packages required by the drbr layer.
+;;     )
+;;     "The list of Lisp packages required by the drbr layer.
 
-Each entry is either:
+;; Each entry is either:
 
-1. A symbol, which is interpreted as a package to be installed, or
+;; 1. A symbol, which is interpreted as a package to be installed, or
 
-2. A list of the form (PACKAGE KEYS...), where PACKAGE is the
-    name of the package to be installed or loaded, and KEYS are
-    any number of keyword-value-pairs.
+;; 2. A list of the form (PACKAGE KEYS...), where PACKAGE is the
+;;     name of the package to be installed or loaded, and KEYS are
+;;     any number of keyword-value-pairs.
 
-    The following keys are accepted:
+;;     The following keys are accepted:
 
-    - :excluded (t or nil): Prevent the package from being loaded
-      if value is non-nil
+;;     - :excluded (t or nil): Prevent the package from being loaded
+;;       if value is non-nil
 
-    - :location: Specify a custom installation location.
-      The following values are legal:
+;;     - :location: Specify a custom installation location.
+;;       The following values are legal:
 
-      - The symbol `elpa' (default) means PACKAGE will be
-        installed using the Emacs package manager.
+;;       - The symbol `elpa' (default) means PACKAGE will be
+;;         installed using the Emacs package manager.
 
-      - The symbol `local' directs Spacemacs to load the file at
-        `./local/PACKAGE/PACKAGE.el'
+;;       - The symbol `local' directs Spacemacs to load the file at
+;;         `./local/PACKAGE/PACKAGE.el'
 
-      - A list beginning with the symbol `recipe' is a melpa
-        recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+;;       - A list beginning with the symbol `recipe' is a melpa
+;;         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
-(defun drbr-ansible/init-ansible-vault()
-  (use-package ansible-vault))
+;; (defun drbr-ansible/init-ansible-vault()
+;;   (use-package ansible-vault))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -49,7 +49,5 @@
 ;; file.
 ;;(when file-)
 ;;(setq ansible::vault-password-file (expand-file-name "~/.vault_pass.txt"))
-(setq ansible::vault-password-file "~/.vault_pass.txt")
-(add-hook 'ansible-vault-mode-hook 'fci-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; config.el ends here
